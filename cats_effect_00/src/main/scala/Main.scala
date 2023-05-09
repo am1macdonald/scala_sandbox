@@ -1,5 +1,4 @@
-import cats.effect.{IO, IOApp}
+import cats.effect.IO
+import java.io.File
 
-object HelloWorld extends IOApp.Simple {
-  val run = IO.println("Hello, World!")
-}
+def copy(origin: File, destination: File): IO[Long] = ???
